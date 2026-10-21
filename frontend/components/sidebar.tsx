@@ -1,0 +1,5 @@
+import Link from "next/link";
+import { Building2, Gauge, Radar, ScrollText, Settings2, Trophy } from "lucide-react";
+const nav=[["/","总览",Gauge],["/companies","企业库",Building2],["/events","事件时间线",ScrollText],["/opportunities","机会排行",Trophy],["/signals","信号规则",Settings2]] as const;
+export function Sidebar(){return <aside className="fixed inset-y-0 left-0 hidden w-64 border-r bg-[#13241b] text-white lg:block"><div className="flex h-20 items-center gap-3 border-b border-white/10 px-6"><div className="grid size-9 place-items-center rounded-lg bg-lime text-ink"><Radar size={20}/></div><div><p className="font-semibold">Opportunity Radar</p><p className="text-[11px] text-white/50">EAST CHINA R&D</p></div></div><nav className="space-y-1 p-4">{nav.map(([href,label,Icon])=><Link key={label} href={href} className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-white/70 transition hover:bg-white/10 hover:text-white"><Icon size={18}/>{label}</Link>)}</nav><div className="absolute bottom-5 left-4 right-4 rounded-lg border border-white/10 bg-white/5 p-3 text-xs leading-5 text-white/55"><b className="text-lime">M1</b> 基础数据管理<br/>自动监测尚未启用</div></aside>}
+

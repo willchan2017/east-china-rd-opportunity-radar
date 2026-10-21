@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+backend/radar.db
+frontend/node_modules/
+node_modules
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+.DS_Store
+

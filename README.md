@@ -100,3 +100,4 @@ docker compose config
 3. 接入可配置 OpenAI 模型，增加 JSON Schema/Pydantic 双重校验、调用审计和证据不足拒答。
 4. 完成信号规则 CRUD、规则回放、事件—信号关联与机会状态建议。
 5. 加入销售反馈闭环、权限、操作审计和真实数据源的验收基线。
+
